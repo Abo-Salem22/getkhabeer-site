@@ -4,24 +4,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>خبير المتاجر الذكي — مساعدك الذكي لإدارة متجرك على سلة</title>
+<link rel="icon" type="image/png" href="favicon.png">
 <meta name="description" content="خبير المتاجر الذكي: بوت تيليجرام بالذكاء الاصطناعي يكتب أوصاف منتجاتك، يحسّن صورها، يرد على التقييمات، يسترجع السلات المتروكة، ويحلل مبيعات متجرك على سلة.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ink:#0A2528;
-  --ink-2:#10373B;
-  --ink-3:#16454A;
-  --paper:#F6F2E9;
-  --card:#FFFDF8;
-  --saffron:#DE9A2B;
-  --saffron-soft:#F4C97B;
-  --saffron-deep:#B77A15;
-  --muted:#5C6B69;
-  --line:#E2DCCB;
-  --on-ink:#EAF1EF;
-  --on-ink-muted:#9DB4B1;
+  --ink:#0A0A0C;
+  --ink-2:#141417;
+  --ink-3:#1F1F24;
+  --paper:#F4F4F5;
+  --card:#FFFFFF;
+  --saffron:#D5D8DD;
+  --saffron-soft:#EDEEF0;
+  --saffron-deep:#6E737C;
+  --muted:#5E6266;
+  --line:#E3E4E7;
+  --on-ink:#ECEDEF;
+  --on-ink-muted:#9EA3AA;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -55,11 +56,7 @@ nav{
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
 .mark{
   width:42px;height:42px;border-radius:12px;
-  background:var(--saffron);
-  color:var(--ink);
-  font-family:'Cairo',sans-serif;font-weight:900;font-size:1.55rem;
-  display:flex;align-items:center;justify-content:center;
-  line-height:1;padding-top:4px;
+  object-fit:cover;display:block;
 }
 .brand b{
   font-family:'Cairo',sans-serif;font-weight:800;font-size:1.3rem;
@@ -79,12 +76,12 @@ nav .navlink:hover{color:#fff}
   padding:64px 0 96px;
 }
 .hero::before{
-  content:"خ";
+  content:"K";
   position:absolute;
   inset-inline-end:-70px;top:-130px;
   font-family:'Cairo',sans-serif;font-weight:900;
   font-size:34rem;line-height:1;
-  color:rgba(222,154,43,.055);
+  color:rgba(255,255,255,.035);
   pointer-events:none;user-select:none;
 }
 .hero-grid{
@@ -112,11 +109,11 @@ nav .navlink:hover{color:#fff}
   font-family:'Cairo',sans-serif;font-weight:800;font-size:1.15rem;
   padding:14px 32px;border-radius:12px;
   text-decoration:none;
-  box-shadow:0 8px 24px rgba(222,154,43,.25);
+  box-shadow:0 8px 24px rgba(0,0,0,.35);
   transition:transform .15s ease, box-shadow .15s ease;
 }
 .cta svg{flex:none}
-.cta:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(222,154,43,.35)}
+.cta:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(0,0,0,.5)}
 .cta:focus-visible{outline:3px solid #fff;outline-offset:3px}
 .hero .under-cta{color:var(--on-ink-muted);font-size:.88rem;margin-top:14px}
 
@@ -135,10 +132,7 @@ nav .navlink:hover{color:#fff}
 }
 .avatar{
   width:38px;height:38px;border-radius:50%;
-  background:var(--saffron);color:var(--ink);
-  font-family:'Cairo',sans-serif;font-weight:900;font-size:1.3rem;
-  display:flex;align-items:center;justify-content:center;
-  padding-top:3px;flex:none;
+  object-fit:cover;flex:none;
 }
 .phone-head .who b{display:block;color:#fff;font-size:.95rem;font-weight:600}
 .phone-head .who span{color:#7FD49B;font-size:.78rem}
@@ -151,7 +145,7 @@ nav .navlink:hover{color:#fff}
   position:relative;
 }
 .me{
-  background:#1F565C;color:#EAF1EF;
+  background:#26262B;color:#EAF1EF;
   margin-inline-start:auto;
   border-bottom-left-radius:4px;
 }
@@ -289,7 +283,7 @@ footer a:hover{color:var(--saffron)}
   <div class="container">
     <nav>
       <a class="brand" href="index.html" aria-label="خبير المتاجر الذكي">
-        <span class="mark">خ</span>
+        <img class="mark" src="logo.png" alt="شعار خبير">
         <b>خبير المتاجر الذكي</b>
       </a>
       <a class="navlink" href="privacy.html">سياسة الخصوصية</a>
@@ -317,7 +311,7 @@ footer a:hover{color:var(--saffron)}
     <div>
       <div class="phone" role="img" aria-label="مثال توضيحي لمحادثة مع البوت">
         <div class="phone-head">
-          <span class="avatar">خ</span>
+          <img class="avatar" src="logo.png" alt="">
           <div class="who">
             <b>خبير المتاجر الذكي</b>
             <span>متصل الآن</span>

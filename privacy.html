@@ -4,19 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>سياسة الخصوصية — خبير المتاجر الذكي</title>
+<link rel="icon" type="image/png" href="favicon.png">
 <meta name="description" content="سياسة الخصوصية لتطبيق خبير المتاجر الذكي: البيانات التي نصل إليها، كيف نعالجها ونحميها، وحقوقك بشأنها.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ink:#0A2528;
-  --paper:#F6F2E9;
-  --card:#FFFDF8;
-  --saffron:#DE9A2B;
-  --saffron-deep:#B77A15;
+  --ink:#0A0A0C;
+  --paper:#F4F4F5;
+  --card:#FFFFFF;
+  --saffron:#D5D8DD;
+  --saffron-deep:#6E737C;
   --muted:#5E6E6C;
-  --line:#E2DCCB;
+  --line:#E3E4E7;
   --radius:14px;
 }
 *{margin:0;padding:0;box-sizing:border-box}
@@ -37,10 +38,7 @@ header{background:var(--ink);color:#fff}
 }
 .mark{
   width:38px;height:38px;border-radius:11px;
-  background:var(--saffron);color:var(--ink);
-  font-family:'Cairo',sans-serif;font-weight:900;font-size:1.4rem;
-  display:inline-flex;align-items:center;justify-content:center;
-  line-height:1;padding-top:3px;vertical-align:middle;margin-inline-end:10px;
+  object-fit:cover;display:inline-block;vertical-align:middle;margin-inline-end:10px;
 }
 
 nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
@@ -100,7 +98,7 @@ footer a:hover{color:var(--saffron)}
 <header>
   <div class="container">
     <nav>
-      <div class="brand"><a href="index.html"><span class="mark">خ</span>خبير المتاجر الذكي</a></div>
+      <div class="brand"><a href="index.html"><img class="mark" src="logo.png" alt="شعار خبير">خبير المتاجر الذكي</a></div>
       <a class="navlink" href="index.html">الرئيسية</a>
     </nav>
   </div>
@@ -165,17 +163,8 @@ footer a:hover{color:var(--saffron)}
         <strong>لا نبيع بياناتك أو بيانات عملائك، ولا نشاركها مع أي طرف ثالث لأغراض تسويقية أو إعلانية، إطلاقاً.</strong>
       </div>
 
-      <h2>ثالثاً: المعالجات الخارجية (مزوّدو الخدمة)</h2>
-      <p>لتقديم ميزات الذكاء الاصطناعي، تُرسل أجزاء محددة من البيانات إلى مزوّدي خدمة تقنيين، ويقتصر استخدامهم للبيانات على تنفيذ المهمة المطلوبة:</p>
-      <table>
-        <tr><th>المزوّد</th><th>الغرض</th><th>البيانات المرسلة</th></tr>
-        <tr><td>Anthropic (Claude API)</td><td>توليد النصوص والتحليلات بالذكاء الاصطناعي</td><td>نصوص المنتجات، ملخصات إحصائية للطلبات والسلات، صور المنتجات عند تحليلها</td></tr>
-        <tr><td>Photoroom</td><td>معالجة صور المنتجات</td><td>صور المنتجات فقط</td></tr>
-        <tr><td>Telegram</td><td>واجهة التخاطب مع البوت</td><td>الرسائل المتبادلة معك عبر البوت</td></tr>
-        <tr><td>Railway</td><td>استضافة الخوادم وقاعدة البيانات</td><td>البيانات المخزنة الموضحة في البند الرابع</td></tr>
-        <tr><td>Resend</td><td>إرسال رسائل البريد الإلكتروني</td><td>بريدك الإلكتروني ورمز الربط</td></tr>
-      </table>
-      <p>جميع هؤلاء المزوّدين ملتزمون بسياسات خصوصية وأمان معلنة خاصة بهم.</p>
+      <h2>ثالثاً: المعالجة لدى مزوّدي خدمة خارجيين</h2>
+      <p>لتقديم ميزات الذكاء الاصطناعي ومعالجة الصور وإرسال البريد الإلكتروني، تُعالَج أجزاء محددة من البيانات لدى مزوّدي خدمات تقنيين خارجيين موثوقين، ويقتصر استخدامهم للبيانات على تنفيذ المهمة المطلوبة فقط. يلتزم كل مزوّد بسياسات خصوصية وأمان معلنة خاصة به، ولا يُمنح أي منهم حق استخدام البيانات لأغراضه الخاصة أو مشاركتها مع أي طرف آخر.</p>
 
       <h2>رابعاً: ما نخزّنه وكيف نحميه</h2>
       <ul>
